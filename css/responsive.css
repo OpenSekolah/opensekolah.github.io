@@ -1,80 +1,123 @@
-@media (max-width: 480px) {
 
-	.accordion-title { width: 100%; padding: 40px 0 0 0; }
-	.nav-tabs > li { width: 100%; }
-	.nav-tabs > li > a { width: 100%; }
-	.header-cta .blk { padding: 10px; }
-	.header-cta h1 { font-size: 4.5rem; }
-	.col-xs-6 { width: 100%; }
-
-}
+/*		Default Layout: 992px. 
+		Gutters: 24px.
+		Outer margins: 48px.
+		Leftover space for scrollbars @1024px: 32px.
+-------------------------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8      9      10
+px      68    160    252    344    436    528    620    712    804    896    */
 
 @media (max-width: 767px) {
 
-	html { font-size: 50.5% }
-	.content section { padding: 25px 0; }
-	.content section + section:before { margin: -25px 15px 25px; }
-	.box { padding: 0 25px; }
-	.content section.separated { margin: 0 -25px -3px 0; }
-
-	.navbar-nav,
-	.navbar-nav > li,
-	.navbar-nav > li > a { width: 100%; }
-	.navbar-nav > li + li { margin: 0; }
-	.navbar-brand { padding: 1.5rem 0; }
-
-	.accordion { padding: 10px 20px; }
-
-	.pricing-features { display: none; }
-
-	.header-bg { height: 550px; }
+.submit-bottom form input[type=text]{}
 
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
 
-	html { font-size: 54.5% }
-	.content section { padding: 35px 0; }
-	.content section + section:before { margin: -35px 15px 35px; }
-	.box { padding: 0 35px; }
-	.content section.separated { margin: 0 -35px -3px 0; }
 
-	.navbar-nav,
-	.navbar-nav > li,
-	.navbar-nav > li > a { width: 100%; }
-	.navbar-nav > li + li { margin: 0; }
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
 
-	.accordion { padding: 20px 30px; }
-
-	.pricing-features { display: none; }
-
-	.header-bg { height: 550px; }
-
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-
-	html { font-size: 58.5% }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
 	
-	.header-bg { height: 650px; }
+	
+	#header .block-right{}
+	.contact-area{text-align: center}
+	#service .service-header p{font-size: 15px}
+	.submit-bottom form input[type=text]{width: 200px;}
+	#service .service-tab ul{margin-right: 50px;}
+	.edit-tab h1{padding-bottom: 10px; padding-top:0px;font-size: 22px;}
+	#service .service-tab ul li a{font-size: 15px;}
+	#contant-1 .block-right-img{ padding-top: 45px;}
+	.gallery-area p{font-size: 15px;}
+	.contant-2-img{text-align: center}
+	
+}
 
-	.table-features li span { display: none; }
+
+
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (max-width: 767px) {
+
+.contact-area{text-align: center}
+.submit-bottom form input[type=text]{width: 200px;}
+#service .service-tab ul{margin-right: 50px;}
+.edit-tab h1{padding-bottom: 10px; padding-top:0px;font-size: 22px;}
+#service .service-tab ul li a{font-size: 15px;padding-right: 20px;}
+#service .service-tab ul li a i{margin-right: 10px}
+#service .service-tab ul li a:hover{padding-right: 0px}
+#contant-1 .block-right-img{ padding-top: 45px;}
+.gallery-area p{font-size: 15px;}
+.contant-2-img{text-align: center}
+#service .service-header p{font-size:14px}
+
+.submit-area{margin-left: 28px}
+.submit-header h3, .gallery-area h1, #service .service-header h1{font-size: 25px}
+.contant-1-head h1, .contant-2-header h1{font-size: 25px}
+.tm-header h2{font-size: 25px}
+.submit-area{margin-left: 0px}
+.submit-bottom form input[type="submit"]{display:block}
+.submit-bottom form input[type=text]{margin-right: 34px;margin-top: 7px;}
+.submit-bottom form input[type="submit"]{display: block;margin-top: 20px;}
+#service .service-tab ul{float:none}
+#service .service-tab ul{margin-right: 0;}
+.support-link ul li{padding:10px;}
+.social-icon a{margin-right:5px}
 
 }
 
-@media (min-width: 1200px) and (max-width: 1280px) {
 
-	.header-bg { height: 680px; }
 
- 	.table-features li span { display: none; }
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
 
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+.contact-area{text-align: center}
+.submit-bottom form input[type=text]{margin-right: 34px;margin-top: 7px;width: 330px;}
+.submit-bottom form input[type="submit"]{display: block;margin-top: 20px;}
+#service .service-tab ul{float:left}
+#service .service-tab ul{margin-right: 50px;}
+.edit-tab h1{padding-bottom: 10px; padding-top:0px;font-size: 22px;}
+#service .service-tab ul li a{font-size: 15px;padding-right: 20px;}
+#service .service-tab ul li a i{margin-right: 10px}
+#service .service-tab ul li a:hover{padding-right: 0px}
+#contant-1 .block-right-img{ padding-top: 45px;}
+.gallery-area p{font-size: 15px;}
+.contant-2-img{text-align: center}
+#service .service-header p{font-size:14px}
+.submit-area{margin-left: 28px}
+.submit-header h3, .gallery-area h1, #service .service-header h1{font-size: 30px}
+.contant-1-head h1, .contant-2-header h1{font-size: 30px}
 }
 
-@media (min-width: 1300px) {
 
-  .owl-carousel-navigation { display: block; }
-  .owl-controls { display: none!important; }
+/*	Retina media query.
+	Overrides styles for devices with a 
+	device-pixel-ratio of 2+, such as iPhone 4.
+-----------------------------------------------    */
 
-  .table-features li span { display: none; }
-
+@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+	
+	
+	
 }
